@@ -1,13 +1,13 @@
 {
   "name": "nodestarter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Node.js Project Initialiser/Generator/Scaffolder",
   "main": "bin/nodestarter.js",
   "bin": {
     "nodestarter": "bin/nodestarter.js"
   },
   "scripts": {
-    "test": "jshint bin/*.js"
+    "lint": "jshint bin/*.js"
   },
   "repository": {
     "type": "git",

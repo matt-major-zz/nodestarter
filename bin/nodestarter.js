@@ -10,6 +10,15 @@ var argv        = require('minimist')(process.argv.slice(2)),
     templateDir = path.join(__dirname, '..', 'template'),
     destDir;
 
+function logError(errorMessage, errorCode) {
+  process.stderr.write(errorMessage + '\n');
+  process.exit(errorCode || 1);
+}
+
+function logInfo(infoMessage) {
+  process.stdout.write(infoMessage + '\n');
+}
+
 if ( !argv.name ) {
   logError('Project Name required', 3);
 }
@@ -51,12 +60,3 @@ scaffold({
     logInfo('Created: "' + data.name + '" ' + data.version);
   }
 });
-
-function logError(errorMessage, errorCode) {
-  process.stderr.write(errorMessage + '\n');
-  process.exit(errorCode || 1);
-}
-
-function logInfo(infoMessage) {
-  process.stdout.write(infoMessage + '\n');
-}
