@@ -7,8 +7,8 @@ var argv        = require('minimist')(process.argv.slice(2)),
     path        = require('path'),
     scaffold    = require('scaffold-generator'),
     cwd         = process.cwd(),
-    templateDir = path.join(__dirname, '..', 'template'),
-    destDir;
+    templateDir = argv.templatePath || path.join(__dirname, '..', 'template'),
+    destDir     = argv.output || path.join(cwd, argv.name);
 
 function logError(errorMessage, errorCode) {
   process.stderr.write(errorMessage + '\n');
@@ -42,8 +42,6 @@ var data = {
   repo: argv.repo,
   license: argv.license || 'MIT'
 };
-
-destDir = path.join(cwd, data.name);
 
 if ( fs.existsSync(destDir) ) {
   logError('Destination directory already exists', 2);

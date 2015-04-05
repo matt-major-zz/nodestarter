@@ -20,12 +20,14 @@ $ nodestarter [options]
 ```
 
     Options
-        --name      | The name of the project/package (required)
-        --author    | The name of the project/package author (required)
-        --email     | The email of the project/package author (required)
-        [--website] | The website of the project/package author (optional)
-        --repo      | The git repository URL (required)
-        [--version] | The version to initialise the project/package at (optional)
+        --name           | The name of the project/package (required)
+        --author         | The name of the project/package author (required)
+        --email          | The email of the project/package author (required)
+        [--website]      | The website of the project/package author (optional)
+        --repo           | The git repository URL (required)
+        [--version]      | The version to initialise the project/package at (optional)
+        [--templatePath] | A custom set of template files (optional)
+        [--output]       | A custom directory to save the project/package in (optional)
 
 ### Contributing
 
