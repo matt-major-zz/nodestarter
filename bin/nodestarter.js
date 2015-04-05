@@ -43,6 +43,10 @@ var data = {
   license: argv.license || 'MIT'
 };
 
+if ( !fs.existsSync(templateDir) ) {
+  logFailure('Template directory does not exist. Please try again.', 2);
+}
+
 if ( fs.existsSync(destDir) ) {
   logFailure('Output directory already exists. Please try again.', 2);
 } else {
