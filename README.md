@@ -1,13 +1,16 @@
 # nodestarter
-### A Node.js Project Initialiser/Generator/Scaffolder
 
 [![Build Status](https://travis-ci.org/matt-major/nodestarter.svg?branch=master)](https://travis-ci.org/matt-major/nodestarter)
 [![Dependencies](https://david-dm.org/matt-major/nodestarter.svg)](https://www.npmjs.com/package/nodestarter)
 [![Downloads](https://img.shields.io/npm/dm/nodestarter.svg)](https://www.npmjs.com/package/nodestarter)
 
+A Node.js Project Initialiser/Generator/Scaffolder.
+
 Create a basic Node.js project using a scaffold template.
 
 ### Install
+
+You can install ```nodestarter``` using ```npm``` as a Global module.
 
 ```bash
 $ npm install -g nodestarter
@@ -16,7 +19,7 @@ $ npm install -g nodestarter
 ### Usage
 
 ```bash
-$ nodestarter [options]
+$ nodestarter [Options]
 ```
 
     Options
@@ -31,7 +34,9 @@ $ nodestarter [options]
 
 ### Contributing
 
-Feel free to make changes and submit a PR. I will be expanding this project over time. Please ensure that your code conforms to the ```jshint``` file provided.
+Feel free to make changes and submit a PR. I will be expanding this project over time.
+
+Please ensure that your code conforms to the ```jshint``` file provided.
 
 ### Issues?
 
