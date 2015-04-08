@@ -1,6 +1,6 @@
 {
   "name": "nodestarter",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A Node.js Project Initialiser/Generator/Scaffolder",
   "main": "bin/nodestarter.js",
   "bin": {

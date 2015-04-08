@@ -31,6 +31,7 @@ $ nodestarter [Options]
         [--version]      | The version to initialise the project/package at (optional)
         [--templatePath] | A custom set of template files (optional)
         [--output]       | A custom directory to save the project/package in (optional)
+        [--private]      | Is this project/package private? [true,false] (optional)
 
 ### Contributing
 
