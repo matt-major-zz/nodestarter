@@ -84,7 +84,8 @@ var data = {
   email: argv.email,
   website: argv.website || argv.repo,
   repo: argv.repo,
-  license: argv.license || 'MIT'
+  license: argv.license || 'MIT',
+  private: argv.private || false
 };
 
 if ( !fs.existsSync(templateDir) ) {
